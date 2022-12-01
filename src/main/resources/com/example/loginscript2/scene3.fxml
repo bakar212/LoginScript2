@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="384.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.loginscript2.fxmlController">
+   <children>
+      <CheckBox layoutX="57.0" layoutY="157.0" mnemonicParsing="false" onAction="#add3Points" text="Proxima B is the name of an exoplanet" />
+      <CheckBox layoutX="57.0" layoutY="131.0" mnemonicParsing="false" onAction="#add3Points" text="Gold was bought to earth by an asteroid" />
+      <CheckBox layoutX="57.0" layoutY="105.0" mnemonicParsing="false" text="Humpback whales can grow as large as 200 feet" />
+      <CheckBox layoutX="57.0" layoutY="183.0" mnemonicParsing="false" onAction="#add3Points" text="A type 3 civilisation can harnesses the power of its galaxy" />
+      <Text layoutX="22.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q1) What is the scientific name for a lion? " wrappingWidth="464.10740661621094">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q2) Which of the following are true facts? (Select As Many As You Like)" wrappingWidth="464.10740661621094">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="22.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q3) Complete the following sentence. Polaris, is the name of..." wrappingWidth="464.10740661621094">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="35.0" layoutY="49.0" mnemonicParsing="false" text="Panthera Tigris">
+         <toggleGroup>
+            <ToggleGroup fx:id="q1" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="197.0" layoutY="49.0" mnemonicParsing="false" onAction="#add5Points" text="Panthera Leo" toggleGroup="$q1" />
+      <RadioButton layoutX="360.0" layoutY="49.0" mnemonicParsing="false" text="Canis Lupus" toggleGroup="$q1" />
+      <RadioButton layoutX="500.0" layoutY="49.0" mnemonicParsing="false" text="Ursus Maritimus" toggleGroup="$q1" />
+      <RadioButton layoutX="36.0" layoutY="250.0" mnemonicParsing="false" text="a constellation">
+         <toggleGroup>
+            <ToggleGroup fx:id="question3" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="150.0" layoutY="250.0" mnemonicParsing="false" onAction="#add5Points" text="the north star" toggleGroup="$question3" />
+      <RadioButton layoutX="264.0" layoutY="250.0" mnemonicParsing="false" text="an upcoming Tesla model" toggleGroup="$question3" />
+      <RadioButton layoutX="449.0" layoutY="250.0" mnemonicParsing="false" text="a city" toggleGroup="$question3" />
+      <Text layoutX="20.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q4) &quot;What lies beyond the shadow of the statue?&quot;, is a quote from which show/movie?" wrappingWidth="534.1074371337891">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="42.0" layoutY="313.0" mnemonicParsing="false" text="Star Wars">
+         <toggleGroup>
+            <ToggleGroup fx:id="q4" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="136.0" layoutY="313.0" mnemonicParsing="false" text="Game Of Thrones" toggleGroup="$q4" />
+      <RadioButton layoutX="277.0" layoutY="313.0" mnemonicParsing="false" text="Lord Of The Rings" toggleGroup="$q4" />
+      <RadioButton layoutX="479.0" layoutY="313.0" mnemonicParsing="false" text="Pirates Of The Carribean" toggleGroup="$q4" />
+      <RadioButton layoutX="413.0" layoutY="313.0" mnemonicParsing="false" onAction="#add7Points" text="Lost" toggleGroup="$q4" />
+      <Button fx:id="finishQuiz" layoutX="14.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#displayScore" text="FINISH">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="scoreLabel" layoutX="107.0" layoutY="352.0" prefHeight="20.0" prefWidth="117.0" textFill="#12ff1e">
+         <font>
+            <Font name="Arial Nova Light" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
